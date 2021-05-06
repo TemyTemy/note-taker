@@ -1,8 +1,9 @@
-const express = require('express')
-const path = require('path')
-const restaurants = require('./notes')
-const app = express()
-const port = 3000
+const express = require('express');
+const path = require('path');
+const notes = require('./notes');
+const axios = require('axios')
+const app = express();
+const port = 3000;
 
 
 app.use(express.urlencoded({ extended: true }));
@@ -15,13 +16,10 @@ app.use(express.static('public'));
 */
 app.get('/', (req, res) => res.sendFile(path.join(__dirname, 'public', 'index.html')));
 app.get('/notes', (req, res) => res.sendFile(path.join(__dirname, 'public', 'notes.html')));
-// app.get('/reserve', (req, res) => res.sendFile(path.join(__dirname, 'public', 'reserve.html')));
-// app.get('/api/tables', (req, res) => res.json(restaurants.getTables()));
-
-// app.post('/api/tables/reserve', (req, res) => {
-//     console.log(req.body);
-//     res.json(restaurants.reserveTable(req.body));
-// });
-
-
+app.get('/api/notes', (req, res) => res.json(notes.listNotes));
+app.post('/api/notes', function(req, res) {
+    const title = req.body.title;
+    const text = req.body.text;
+    notes.addNote(title, text);
+  });
 app.listen(port, () => console.log(`App listening on port ${port}!`))

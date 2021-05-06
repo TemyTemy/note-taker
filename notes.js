@@ -61,3 +61,5 @@ function deleteNote(id) {
     saveDb();
 }
 
+module.exports = notes;
+
