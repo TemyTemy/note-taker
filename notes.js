@@ -12,7 +12,17 @@ const notes = {
     },
 
     addNote: function(title, text) {
-        DB_JSON.push(note);
+        const id = addNote(title, text);
+        saveDb();
+        return id;
+    },
+
+    getNote: function(id) {
+        return findNote(id);
+    },
+
+    removeNote: function(id) {
+        deleteNote(id);
     }
 
 }
@@ -23,9 +33,31 @@ function loadDb() {
     DB_JSON = JSON.parse(dbText);
 }
 
+function saveDb() {
+    const dbFile = path.join(__dirname, + DB_FILE);
+    fs.writeFile(dbFile, JSON.stringify(DB_JSON), error => {
+        if (error) {
+            console.error(error);
+            return;
+        }
+    });
+}
+
 function addNote(title, text) {
     const uid = uniqid();
     const note  = new Note(title, text, uid);
     DB_JSON.push(note);
     return uid;
 }
+
+function findNote(id) {
+    const note = DB_JSON.find((x) => x.id === id);
+    return note ? note : {};
+}
+
+function deleteNote(id) {
+    const index = DB_JSON.findIndex((x) => x.id === id);
+    DB_JSON.splice(index, 1);
+    saveDb();
+}
+
