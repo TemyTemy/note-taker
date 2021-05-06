@@ -25,27 +25,29 @@ const notes = {
         deleteNote(id);
     }
 
-}
+};
 
 function loadDb() {
-    const dbFile = path.join(__dirname, + DB_FILE);
+    const dbFile = path.join(__dirname, 'db',  DB_FILE);
     const dbText = fs.readFileSync(dbFile).toString();
     DB_JSON = JSON.parse(dbText);
+    console.log(DB_JSON);
 }
 
 function saveDb() {
-    const dbFile = path.join(__dirname, + DB_FILE);
+    const dbFile = path.join(__dirname, 'db', DB_FILE);
     fs.writeFile(dbFile, JSON.stringify(DB_JSON), error => {
         if (error) {
             console.error(error);
             return;
         }
     });
+    console.log(DB_JSON);
 }
 
 function addNote(title, text) {
     const uid = uniqid();
-    const note  = new Note(title, text, uid);
+    const note  = {"title": title, "text": text, "id": uid};
     DB_JSON.push(note);
     return uid;
 }
