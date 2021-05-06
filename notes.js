@@ -1,7 +1,6 @@
 const fs = require('fs');
 const path = require('path');
 var uniqid = require('uniqid');
-const Note = require('./lib/Note');
 const DB_FILE = 'db.json';
 let DB_JSON = [];
 

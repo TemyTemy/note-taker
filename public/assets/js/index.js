@@ -86,10 +86,8 @@ const handleNoteDelete = (e) => {
     activeNote = {};
   }
 
-  deleteNote(noteId).then(() => {
-    getAndRenderNotes();
-    renderActiveNote();
-  });
+  Promise.all([deleteNote(noteId), getAndRenderNotes()])
+         .then(() => renderActiveNote());
 };
 
 // Sets the activeNote and displays it
