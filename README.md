@@ -39,7 +39,7 @@
 
 **Image 3**
 
- !![alt text](https://github.com/TemyTemy/note-taker/blob/main/assets/screenshot3.PNG)
+ ![alt text](https://github.com/TemyTemy/note-taker/blob/main/assets/screenshot3.PNG)
 
 
 
