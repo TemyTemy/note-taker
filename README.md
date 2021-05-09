@@ -3,6 +3,7 @@
 
 **Technologies Used: Express, Heroku, JavaScript**
 
+***
 
 
 ## Features
@@ -17,7 +18,7 @@
 - The application is responsive.
 
 
-
+***
 
 
 
@@ -32,17 +33,20 @@
 
   ![alt text](https://github.com/TemyTemy/note-taker/blob/main/assets/screenshot1.PNG)
 
+***
 
 **Image 2**
 
  ![alt text](https://github.com/TemyTemy/note-taker/blob/main/assets/screenshot2.PNG)
+ 
+ ***
 
 **Image 3**
 
  ![alt text](https://github.com/TemyTemy/note-taker/blob/main/assets/screenshot3.PNG)
 
 
-
+***
 
 **Image 4**
 
@@ -50,15 +54,16 @@
 
 
 
-
+***
 
 
 
 ## Links on Github
 
 - The source code repository is available at this link: https://github.com/TemyTemy/note-taker
-- The home page to the website is available at this link: https://temytemy.github.io/weather-dashboard/
 - Heroku link: https://secret-anchorage-57019.herokuapp.com/notes
+
+***
 
 ## License
 MIT
