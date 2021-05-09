@@ -30,7 +30,6 @@ function loadDb() {
     const dbFile = path.join(__dirname, 'db',  DB_FILE);
     const dbText = fs.readFileSync(dbFile).toString();
     DB_JSON = JSON.parse(dbText);
-    console.log(DB_JSON);
 }
 
 function saveDb() {
@@ -41,7 +40,6 @@ function saveDb() {
             return;
         }
     });
-    console.log(DB_JSON);
 }
 
 function addNote(title, text) {
