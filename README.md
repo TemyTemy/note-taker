@@ -30,42 +30,24 @@
 
 **Image 1**  
 
-  ![alt text](https://github.com/TemyTemy/weather-dashboard/blob/master/assets/screenshot1.PNG)
+  ![alt text](https://github.com/TemyTemy/note-taker/blob/main/assets/screenshot1.PNG)
 
 
 **Image 2**
 
- ![alt text](https://github.com/TemyTemy/weather-dashboard/blob/master/assets/screenshot2.PNG)
+ ![alt text](https://github.com/TemyTemy/note-taker/blob/main/assets/screenshot2.PNG)
 
 **Image 3**
 
- !![alt text](https://github.com/TemyTemy/weather-dashboard/blob/master/assets/screenshot3.PNG)
+ !![alt text](https://github.com/TemyTemy/note-taker/blob/main/assets/screenshot3.PNG)
 
 
 
 
 **Image 4**
 
- ![alt text](https://github.com/TemyTemy/weather-dashboard/blob/master/assets/screenshot4.PNG)
+ ![alt text](https://github.com/TemyTemy/note-taker/blob/main/assets/screenshot4.PNG)
 
-
-
-
-**Image 5**
-
- ![alt text](https://github.com/TemyTemy/weather-dashboard/blob/master/assets/screenshot5.PNG)
-
-
-
-**Image 6**
-
- ![alt text](https://github.com/TemyTemy/weather-dashboard/blob/master/assets/screenshot6.PNG)
-
-
-
-**Image 7**
-
- ![alt text](https://github.com/TemyTemy/weather-dashboard/blob/master/assets/screenshot7.PNG)
 
 
 
