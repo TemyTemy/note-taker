@@ -69,7 +69,7 @@
 ## Links on Github
 
 - The source code repository is available at this link: https://github.com/TemyTemy/note-taker
-- Heroku link: https://secret-anchorage-57019.herokuapp.com/notes
+- Heroku link: https://secret-anchorage-57019.herokuapp.com/
 
 ***
 
