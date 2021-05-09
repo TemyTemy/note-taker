@@ -56,6 +56,14 @@
 
 ***
 
+**Image 5**
+
+ ![alt text](https://github.com/TemyTemy/note-taker/blob/main/assets/screenshot5.PNG)
+
+
+***
+
+
 
 
 ## Links on Github
