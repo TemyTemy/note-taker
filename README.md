@@ -13,6 +13,7 @@
 - When the Save icon is clicked, the new note is saved in the left column with previous notes.
 - User can view previous notes by clicking on the note in the left column.
 - User can click on the Write icon at the top of the page to be presented with empty fields to write a new note title and text.
+- User can also delete a note in the left column.
 - The application is responsive.
 
 
